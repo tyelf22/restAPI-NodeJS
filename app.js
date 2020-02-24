@@ -17,6 +17,8 @@ Mongoose.connect("mongodb+srv://tyelf22:Nike2299@ria-crud-cluster-gi4er.mongodb.
 app.use(BodyParser.json())
 app.use(BodyParser.urlencoded({extended: true}))
 
+//GET welcome page
+app.get("/", PlayerController.welcome)
 
 //POST create new player
 app.post("/player", PlayerController.create)
