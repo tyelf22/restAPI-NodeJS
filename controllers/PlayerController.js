@@ -3,7 +3,7 @@ const PlayerModel = require('../models/PlayerModel')
 module.exports = {
     welcome: (req, res, next) => {
         res.send('Welcome to my rest api')
-    }
+    },
     create: async (req, res, next) => {
         try {
             let player = new PlayerModel(req.body)
