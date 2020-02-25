@@ -15,6 +15,8 @@ Clone the repo and install the dependencies
 
 # API Documentation
 
+    https://te-restapi.herokuapp.com/
+
 ## Welcome Page
 
 ### Request
