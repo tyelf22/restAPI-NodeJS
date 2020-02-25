@@ -27,7 +27,7 @@ app.post("/player", PlayerController.create)
 app.get('/players', PlayerController.getAll)
 
 //GET players by team
-app.get('/player/team/:team', PlayerController.getTeam)
+app.get('/players/team/:team', PlayerController.getTeam)
 
 //GET players by id
 app.get("/player/:id", PlayerController.getId)
