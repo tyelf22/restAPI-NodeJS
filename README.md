@@ -57,7 +57,7 @@ creates new player object
 
 ### Response
 
-new created player objects
+    new created player objects
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -75,7 +75,7 @@ gets all of the players by team name
 
 ### Response
 
-all player objects with specified team name
+    all player objects with specified team name
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -93,7 +93,7 @@ gets player by player id
 
 ### Response
 
-player object by id
+    player object by id
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -111,7 +111,7 @@ edit player name or team by id
 
 ### Response
 
-edited player object
+    edited player object
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -129,7 +129,7 @@ delete player by id
 
 ### Response
 
-deleted player object
+    deleted player object
     {
         "firstname": "lebron",
         "lastname": "james",
