@@ -21,7 +21,7 @@ Clone the repo and install the dependencies
 
 `GET /`
 
-    return the welcome page
+return the welcome page
 
 ### Response
 
@@ -34,7 +34,7 @@ Clone the repo and install the dependencies
 
 `GET /players`
 
-    returns top 25 current NBA players
+returns top 25 current NBA players
     
 
 ### Response
@@ -52,12 +52,12 @@ Clone the repo and install the dependencies
 
 `POST /player`
 
-    creates new player object
+creates new player object
     
 
 ### Response
 
-    new created player objects
+new created player objects
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -70,12 +70,12 @@ Clone the repo and install the dependencies
 
 `GET /players/team/{team}`
 
-    gets all of the players by team name
+gets all of the players by team name
     
 
 ### Response
 
-    all player objects with specified team name
+all player objects with specified team name
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -88,12 +88,12 @@ Clone the repo and install the dependencies
 
 `GET /player/{id}`
 
-    gets player by player id
+gets player by player id
     
 
 ### Response
 
-    player object by id
+player object by id
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -106,12 +106,12 @@ Clone the repo and install the dependencies
 
 `PUT /player/{id}`
 
-    edit player name or team by id
+edit player name or team by id
     
 
 ### Response
 
-    edited player object
+edited player object
     {
         "firstname": "lebron",
         "lastname": "james",
@@ -124,12 +124,12 @@ Clone the repo and install the dependencies
 
 `DELETE /player/{id}`
 
-    delete player by id
+delete player by id
     
 
 ### Response
 
-    deleted player object
+deleted player object
     {
         "firstname": "lebron",
         "lastname": "james",
