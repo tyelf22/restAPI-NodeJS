@@ -5,6 +5,7 @@ let app = Express()
 
 const CONNECTION_URI = process.env.MONGODB_URI || "mongodb+srv://tyelf22:Nike2299@ria-crud-cluster-gi4er.mongodb.net/people?retryWrites=true&w=majority"
 
+
 // Controllers
 const PlayerController = require('./controllers/PlayerController')
 
@@ -14,11 +15,6 @@ Mongoose.connect(CONNECTION_URI,
     useUnifiedTopology: true,
     useNewUrlParser: true 
 })
-
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'))
-}
-
 
 // Middleware
 app.use(BodyParser.json())
