@@ -3,11 +3,13 @@ const BodyParser = require('body-parser')
 const Mongoose = require('mongoose')
 let app = Express()
 
+const CONNECTION_URI = process.env.MONGODB_URI || "mongodb+srv://tyelf22:Nike2299@ria-crud-cluster-gi4er.mongodb.net/people?retryWrites=true&w=majority"
+
 // Controllers
 const PlayerController = require('./controllers/PlayerController')
 
 // Database
-Mongoose.connect("mongodb+srv://tyelf22:Nike2299@ria-crud-cluster-gi4er.mongodb.net/people?retryWrites=true&w=majority", 
+Mongoose.connect(CONNECTION_URI, 
 { 
     useUnifiedTopology: true,
     useNewUrlParser: true 
