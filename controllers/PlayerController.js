@@ -14,13 +14,12 @@ module.exports = {
         }
     },
     getAll: async (req, res, next) => {
-        res.send('this is all players route')
-        // try {
-        //     let result = await PlayerModel.find().exec()
-        //     res.send(result)
-        // } catch(error) {
-        //     res.status(500).send(error)
-        // }
+        try {
+            let result = await PlayerModel.find().exec()
+            res.send(result)
+        } catch(error) {
+            res.status(500).send(error)
+        }
     },
     getTeam: async (req, res, next) => {
         try {
