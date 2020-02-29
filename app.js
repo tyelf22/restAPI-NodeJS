@@ -15,6 +15,11 @@ Mongoose.connect(CONNECTION_URI,
     useNewUrlParser: true 
 })
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))
+}
+
+
 // Middleware
 app.use(BodyParser.json())
 app.use(BodyParser.urlencoded({extended: true}))
