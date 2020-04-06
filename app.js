@@ -3,7 +3,7 @@ const BodyParser = require('body-parser')
 const Mongoose = require('mongoose')
 let app = Express()
 
-const CONNECTION_URI = process.env.MONGODB_URI || "mongodb+srv://tyelf22:Nike2299@ria-crud-cluster-gi4er.mongodb.net/people?retryWrites=true&w=majority"
+const CONNECTION_URI = process.env.MONGODB_URI || "process.env.DB_CONNECT_URL"
 
 
 // Controllers
